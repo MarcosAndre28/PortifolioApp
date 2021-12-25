@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MeuCV</string>
+    <string name="Kotlin_text">Olá! Comecei estudar programação na faculdade de Sistemas de informação e com isso despertei um amor em desenvolvimento mobile e hoje sou estudante de Kotlin nas áreas mobile e back-end. Já tive experiência com springboot em uma criação de uma Api para fazer a conexão de um app com banco de dados Mysql, fiz também a utilização do firebase para autenticação do usuário e implementação do sistemas de google maps via fragmente.</string>
+    <string name="Job">Developer Mobile Kotlin</string>
+    <string name="Kotlin_text2">Trabalho hoje em um Supermercado na área de contabilidade, onde faço as funções de cadastramentos de produtos nos sistema,  notas e verificação de notas dos caixas.</string>
+    <string name="marcos_nand">Marcos André</string>
+    <string name="formacao">Sou Formado em Sistemas de informação, onde iniciei o curso em 2018 e finalizei em dezembro de 2021.</string>
+    <string name="trabalho_atual">Trabalho Atual</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="experi_mcia_profissional">Experiência Profissional</string>
+
+</resources>
