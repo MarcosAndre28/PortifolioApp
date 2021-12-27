@@ -27,7 +27,7 @@ class CvFragment : Fragment() {
 
         adpater = CVAdapter(items)
         RvCv.setLayoutManager( LinearLayoutManager(getContext()))
-        RvCv.setAdapter(adpater);
+        RvCv.setAdapter(adpater)
     }
 
 
