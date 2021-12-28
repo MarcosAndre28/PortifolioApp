@@ -12,7 +12,7 @@ import com.example.meucv.R
 
 class PortifolioFragment : Fragment() {
 
-    private lateinit var listaPort: List<PortifolioItem>
+    private lateinit var listaPort: MutableList<PortifolioItem>
     private lateinit var rv_portifolio: RecyclerView
     private lateinit var portifolioAdapter: PortifolioAdapter
 
@@ -25,16 +25,17 @@ class PortifolioFragment : Fragment() {
 
         rv_portifolio = view.findViewById(R.id.rv_portifolio)
 
-        listaPort = ArrayList()
-        (listaPort as ArrayList<PortifolioItem>).add(PortifolioItem())
-        (listaPort as ArrayList<PortifolioItem>).add(PortifolioItem())
-        (listaPort as ArrayList<PortifolioItem>).add(PortifolioItem())
-        (listaPort as ArrayList<PortifolioItem>).add(PortifolioItem())
-        (listaPort as ArrayList<PortifolioItem>).add(PortifolioItem())
-        (listaPort as ArrayList<PortifolioItem>).add(PortifolioItem())
-        (listaPort as ArrayList<PortifolioItem>).add(PortifolioItem())
-        (listaPort as ArrayList<PortifolioItem>).add(PortifolioItem())
-        (listaPort as ArrayList<PortifolioItem>).add(PortifolioItem())
+        listaPort = mutableListOf()
+        listaPort.add(PortifolioItem())
+        listaPort.add(PortifolioItem())
+        listaPort.add(PortifolioItem())
+        listaPort.add(PortifolioItem())
+        listaPort.add(PortifolioItem())
+        listaPort.add(PortifolioItem())
+        listaPort.add(PortifolioItem())
+        listaPort.add(PortifolioItem())
+        listaPort.add(PortifolioItem())
+
 
         portifolioAdapter = PortifolioAdapter(listaPort)
         rv_portifolio.layoutManager = GridLayoutManager(activity,3)

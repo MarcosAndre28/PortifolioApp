@@ -2,19 +2,29 @@ package com.example.meucv
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Switch
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.meucv.cv.CvFragment
 import com.example.meucv.home.HomeFragment
 import com.example.meucv.portifolio.PortifolioFragment
+import com.example.meucv.sidemenu.CallBack
 import com.example.meucv.sidemenu.MenuAdapter
 import com.example.meucv.sidemenu.MenuItem
 import com.example.meucv.sidemenu.MenuUtil
 import com.example.meucv.team.TeamFragment
 
-class MainActivity : AppCompatActivity() {
+
+
+
+
+
+
+class MainActivity : AppCompatActivity() , CallBack{
 
     lateinit var menuRv : RecyclerView
+    lateinit var menuItems: List<MenuItem>
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,11 +33,6 @@ class MainActivity : AppCompatActivity() {
 
         //Menu
         setupSideMenu()
-
-
-
-
-
 
         setPortifolioFragment()
         //setCVFragment()
@@ -38,9 +43,9 @@ class MainActivity : AppCompatActivity() {
 
     fun setupSideMenu() {
         menuRv = findViewById(R.id.rv_side_menu)
-        val menuItems : List<MenuItem>
+       // val menuItems : List<MenuItem>
         menuItems = MenuUtil.MenuList().getList().toList()
-        val adapter  : MenuAdapter = MenuAdapter(menuItems)
+        val adapter  : MenuAdapter = MenuAdapter(menuItems,this)
         menuRv.setLayoutManager( LinearLayoutManager(this))
         menuRv.setAdapter(adapter)
     }
@@ -58,5 +63,21 @@ class MainActivity : AppCompatActivity() {
     fun setHomeFragment(){
         supportFragmentManager.beginTransaction().replace(R.id.container,HomeFragment()).commit()
     }
+
+    override fun onSideMenuItemClick(int: Int) {
+
+        when(menuItems.get(int).code){
+            MenuUtil.companio.HOME_FRAGMENT_CODE -> setHomeFragment()
+            MenuUtil.companio.CV_FRAGMENT_CODE -> setCVFragment()
+            MenuUtil.companio.PORTIFOLIO_FRAGMENT_CODE -> setPortifolioFragment()
+            MenuUtil.companio.TEAM_FRAGMENT_CODE -> setTeamFragment()
+            else -> setHomeFragment()
+        }
+
+    }
 }
+
+
+
+
 

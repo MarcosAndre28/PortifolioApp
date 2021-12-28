@@ -6,8 +6,12 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.meucv.R
+import javax.security.auth.callback.Callback
+import com.example.meucv.sidemenu.CallBack as CallBack
 
-class MenuAdapter(private var listaMenu: List<MenuItem>) : RecyclerView.Adapter<MenuAdapter.MenuViewHolder>(){
+class MenuAdapter(private  var listaMenu: List<MenuItem>, val listener: CallBack) : RecyclerView.Adapter<MenuAdapter.MenuViewHolder>(){
+
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
         val context = parent.context
@@ -17,27 +21,37 @@ class MenuAdapter(private var listaMenu: List<MenuItem>) : RecyclerView.Adapter<
     }
 
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
+
         listaMenu.get(position).icon?.let { holder.icon.setImageResource(it) }
         if (listaMenu.get(position).isSelected == true){
             holder.isSelected.setVisibility(View.VISIBLE)
         }else{
-            holder.isSelected.setVisibility(View.INVISIBLE)
+            holder.isSelected.setVisibility(View.GONE)
         }
+
     }
 
     override fun getItemCount(): Int {
        return listaMenu.size
     }
 
-    class  MenuViewHolder : RecyclerView.ViewHolder {
+    inner class  MenuViewHolder : RecyclerView.ViewHolder {
+
 
         var icon : ImageView
         var isSelected : ImageView
 
-        constructor(itemView: View) : super(itemView){
+        constructor(itemView: View) : super(itemView) {
 
             icon = itemView.findViewById(R.id.item_menu_icon)
             isSelected = itemView.findViewById(R.id.item_menu_selected)
+
+            itemView.setOnClickListener {
+                listener.onSideMenuItemClick(adapterPosition)
+            }
+
+
         }
     }
+
 }
