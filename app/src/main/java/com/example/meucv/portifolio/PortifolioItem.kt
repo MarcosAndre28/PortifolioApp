@@ -1,6 +1,6 @@
 package com.example.meucv.portifolio
 
-class PortifolioItem {
+class PortifolioItem  {
      var img: Int? = null
      var title: String? = null
      var description: String? = null
@@ -8,7 +8,6 @@ class PortifolioItem {
     constructor(){
 
     }
-
     constructor(img: Int?, title: String?) {
          this.img = img
          this.title = title
@@ -20,7 +19,8 @@ class PortifolioItem {
         this.description = description
     }
 
-
-
+    constructor  (img: Int?) {
+        this.img = img
+    }
 
 }

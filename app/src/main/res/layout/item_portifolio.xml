@@ -8,13 +8,13 @@
     android:foreground="?android:selectableItemBackground"
     android:layout_height="100dp">
 
-    <TextView
-        android:id="@+id/item_port_text"
-        android:text="1"
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/item_portfolio_img"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </TextView>
+    </ImageView>
 
 </LinearLayout>

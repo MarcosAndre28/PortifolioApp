@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() , CallBack{
 
     lateinit var menuRv : RecyclerView
     lateinit var menuItems: List<MenuItem>
+    lateinit var adapter: MenuAdapter
+    var  selectedMenuPos : Int = 0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,10 +36,11 @@ class MainActivity : AppCompatActivity() , CallBack{
         //Menu
         setupSideMenu()
 
-        setPortifolioFragment()
-        //setCVFragment()
-        //setHomeFragment()
-       /// setTeamFragment()
+        setHomeFragment()
+
+       // setPortifolioFragment()
+      //setCVFragment()
+     // setTeamFragment()
 
     }
 
@@ -45,7 +48,7 @@ class MainActivity : AppCompatActivity() , CallBack{
         menuRv = findViewById(R.id.rv_side_menu)
        // val menuItems : List<MenuItem>
         menuItems = MenuUtil.MenuList().getList().toList()
-        val adapter  : MenuAdapter = MenuAdapter(menuItems,this)
+         adapter   = MenuAdapter(menuItems,this)
         menuRv.setLayoutManager( LinearLayoutManager(this))
         menuRv.setAdapter(adapter)
     }
@@ -73,7 +76,10 @@ class MainActivity : AppCompatActivity() , CallBack{
             MenuUtil.companio.TEAM_FRAGMENT_CODE -> setTeamFragment()
             else -> setHomeFragment()
         }
-
+        menuItems.get(selectedMenuPos).isSelected = false
+        menuItems.get(int).isSelected = true
+        selectedMenuPos = int
+        adapter.notifyDataSetChanged()
     }
 }
 

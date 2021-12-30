@@ -3,8 +3,10 @@ package com.example.meucv.portifolio
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.meucv.R
 
 
@@ -21,7 +23,8 @@ class PortifolioAdapter(private val listaPorti: List<PortifolioItem> ) : Recycle
     }
 
     override fun onBindViewHolder(holder: PortifolioViewHolder, position: Int) {
-        holder.tvPosition.setText(position.toString())
+          Glide.with(holder.itemView.context).load(listaPorti.get(position).img).into(holder.tvPosition)
+       // holder.tvPosition.setText(position.toString())
 
 
 
@@ -32,10 +35,10 @@ class PortifolioAdapter(private val listaPorti: List<PortifolioItem> ) : Recycle
     }
     class PortifolioViewHolder : RecyclerView.ViewHolder {
 
-        var tvPosition : TextView
+        var tvPosition : ImageView
 
         constructor(itemView: View) : super(itemView){
-            tvPosition = itemView.findViewById(R.id.item_port_text)
+            tvPosition = itemView.findViewById(R.id.item_portfolio_img)
         }
     }
 }
