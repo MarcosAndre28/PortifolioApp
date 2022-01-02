@@ -1,6 +1,8 @@
 package com.example.meucv.portifolio
 
-class PortifolioItem  {
+import java.io.Serializable
+
+class PortifolioItem : Serializable {
      var img: Int? = null
      var title: String? = null
      var description: String? = null

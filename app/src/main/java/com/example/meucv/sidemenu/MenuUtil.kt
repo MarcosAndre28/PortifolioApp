@@ -22,7 +22,7 @@ class MenuUtil() {
             val list: MutableList<MenuItem> = mutableListOf()
             list.add(MenuItem(com.example.meucv.R.drawable.ic_baseline_home_24, HOME_FRAGMENT_CODE,true))
             list.add(MenuItem(com.example.meucv.R.drawable.ic_baseline_school_24, CV_FRAGMENT_CODE,false))
-            list.add(MenuItem(com.example.meucv.R.drawable.ic_baseline_group_24, TEAM_FRAGMENT_CODE,false))
+            list.add(MenuItem(com.example.meucv.R.drawable.ic_baseline_library_books_24, TEAM_FRAGMENT_CODE,false))
             list.add(MenuItem(com.example.meucv.R.drawable.ic_baseline_dashboard_24, PORTIFOLIO_FRAGMENT_CODE,false))
 
             return list

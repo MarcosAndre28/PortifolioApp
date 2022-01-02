@@ -9,5 +9,14 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="experi_mcia_profissional">Experiência Profissional</string>
-
+    <string name="cursos">Aqui esta a lista de cursos que sou certificado, tem cursos de programação, metodo agil, banco de dados e entre varios outros.</string>
+    <string name="curso_Kotlin1">Dê os primeiros passos no aprendizado da linguagem Kotlin \n
+    °Conteúdo \n
+        °História básica da computação e noções de lógica de programação \n
+        °Configuração de ambiente de desenvolvimento e conceitos iniciais sobre Kotlin \n
+        °Como Kotlin funciona na JVM \n
+        °Variáveis, funções, controle de fluxo \n
+        °Criação de projeto Kotlin + Java Swing \n
+        °Conceitos iniciais de Android e criação de uma aplicação simples \n
+    </string>
 </resources>

@@ -4,6 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/drawable/circle_cv.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/drawable/ic_baseline_dashboard_24.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/drawable/ic_baseline_library_books_24.xml" value="0.21875" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/drawable/ic_icone_definitivo_background.xml" value="0.21875" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21875" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/drawable/icone_app.xml" value="0.21875" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/drawable/icone_app_tester.xml" value="0.21875" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/drawable/icone_app_tester_background.xml" value="0.21875" />
         <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/drawable/item_portifolio.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/drawable/oval.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/drawable/team_card_bg.xml" value="0.37864583333333335" />
@@ -11,11 +19,14 @@
         <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/layout/fragment_cv.xml" value="0.3625" />
         <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/layout/fragment_home.xml" value="0.3569230769230769" />
         <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/layout/fragment_portifolio.xml" value="0.33" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/layout/fragment_portifolio_details.xml" value="0.3625" />
         <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/layout/fragment_team.xml" value="0.3625" />
         <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/layout/item_cv.xml" value="0.3625" />
         <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/layout/item_menu.xml" value="0.3625" />
         <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/layout/item_portifolio.xml" value="0.3625" />
         <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/layout/item_team.xml" value="0.3625" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.21875" />
+        <entry key="..\:/Users/marco/AndroidStudioProjects/PortifolioApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.21875" />
       </map>
     </option>
   </component>

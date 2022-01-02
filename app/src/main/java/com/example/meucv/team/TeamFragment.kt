@@ -21,12 +21,12 @@ class TeamFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         RvTeam = view.findViewById(R.id.rv_team)
 
-        val item =TeamItem("Marcos Andre",getString(R.string.Kotlin_text2),R.drawable.userspace)
-       // val teste = TeamItem("Marcos",getString(R.string.Kotlin_text2),R.drawable.userspace)
+        val item =TeamItem("Desenvolvimento Kotlin Iniciante",getString(R.string.curso_Kotlin1),R.drawable.kotlin)
+
 
         listaTeam = ArrayList<TeamItem>()
-        //(listaTeam as ArrayList<TeamItem>).add(teste)
         (listaTeam as ArrayList<TeamItem>).add(item)
+
 
         RvTeam.setLayoutManager( LinearLayoutManager(getContext()))
         adapter = TeamAdapter(listaTeam)
