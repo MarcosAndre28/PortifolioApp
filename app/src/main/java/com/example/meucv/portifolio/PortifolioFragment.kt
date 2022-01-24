@@ -17,11 +17,6 @@ class PortifolioFragment : Fragment(), PortifolioCallback {
     private lateinit var portifolioAdapter: PortifolioAdapter
 
 
-
-    fun PortifolioFragment(){
-
-    }
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_portifolio, container, false)
     }
@@ -55,7 +50,6 @@ class PortifolioFragment : Fragment(), PortifolioCallback {
         val bundle = Bundle()
         bundle.putSerializable("object",listaPort.get(pos))
         portfolioFragmentDetails.arguments = bundle
-
 
         activity?.let { portfolioFragmentDetails.show(it.supportFragmentManager,"tagname") }
     }

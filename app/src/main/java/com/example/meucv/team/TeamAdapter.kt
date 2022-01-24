@@ -12,7 +12,6 @@ import com.example.meucv.R
 class TeamAdapter(private val mdata: List<TeamItem>) : RecyclerView.Adapter<TeamAdapter.TeamViewHolder>(){
 
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TeamViewHolder {
         val view: View
         view = LayoutInflater.from(parent.context)

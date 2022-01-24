@@ -23,7 +23,6 @@ class TeamFragment : Fragment() {
 
         val item =TeamItem("Desenvolvimento Kotlin Iniciante",getString(R.string.curso_Kotlin1),R.drawable.kotlin)
 
-
         listaTeam = ArrayList<TeamItem>()
         (listaTeam as ArrayList<TeamItem>).add(item)
 
@@ -31,10 +30,6 @@ class TeamFragment : Fragment() {
         RvTeam.setLayoutManager( LinearLayoutManager(getContext()))
         adapter = TeamAdapter(listaTeam)
         RvTeam.setAdapter(adapter)
-
-
-
-
 
     }
 

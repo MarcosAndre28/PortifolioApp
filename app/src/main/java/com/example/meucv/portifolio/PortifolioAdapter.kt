@@ -12,11 +12,6 @@ import com.example.meucv.R
 class PortifolioAdapter(private var listaPorti: List<PortifolioItem>, var listener: PortifolioCallback) : RecyclerView.Adapter<PortifolioAdapter.PortifolioViewHolder>() {
 
 
-    fun PortfolioAdapter(listaPorti: List<PortifolioItem>, listener: PortifolioCallback) {
-        this.listaPorti = listaPorti
-        this.listener = listener
-    }
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PortifolioViewHolder {
         val context = parent.context

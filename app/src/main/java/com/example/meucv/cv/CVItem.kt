@@ -8,14 +8,9 @@ class CVItem {
      var description: String? = null
 
 
-    constructor(){
-
-    }
-
     constructor(title: String?, description: String) {
         this.title = title
         this.description = description
     }
-
 
 }

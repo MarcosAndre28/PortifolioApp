@@ -19,4 +19,6 @@
         °Criação de projeto Kotlin + Java Swing \n
         °Conceitos iniciais de Android e criação de uma aplicação simples \n
     </string>
+    <string name="nome_do_projeto">Nome do Projeto</string>
+    <string name="descri_o_do_projeto">Descrição do Projeto</string>
 </resources>

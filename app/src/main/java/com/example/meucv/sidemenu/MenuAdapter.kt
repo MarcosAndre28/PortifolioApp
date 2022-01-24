@@ -28,7 +28,6 @@ class MenuAdapter(private  var listaMenu: List<MenuItem>, val listener: CallBack
         }else{
             holder.isSelected.setVisibility(View.GONE)
         }
-
     }
 
     override fun getItemCount(): Int {
@@ -36,7 +35,6 @@ class MenuAdapter(private  var listaMenu: List<MenuItem>, val listener: CallBack
     }
 
     inner class  MenuViewHolder : RecyclerView.ViewHolder {
-
 
         var icon : ImageView
         var isSelected : ImageView
@@ -49,9 +47,6 @@ class MenuAdapter(private  var listaMenu: List<MenuItem>, val listener: CallBack
             itemView.setOnClickListener {
                 listener.onSideMenuItemClick(adapterPosition)
             }
-
-
         }
     }
-
 }

@@ -14,9 +14,7 @@ class CVAdapter (private val lista: List<CVItem>): RecyclerView.Adapter<CVAdapte
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CVViewHolder {
         val view: View
-        view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_cv,parent,false)
-
+        view = LayoutInflater.from(parent.context).inflate(R.layout.item_cv,parent,false)
         return CVViewHolder(view)
     }
 

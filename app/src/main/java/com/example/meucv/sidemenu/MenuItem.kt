@@ -6,11 +6,6 @@ class MenuItem {
      var code: Int? = null
      var isSelected: Boolean? = null
 
-    constructor(icon: Int?, code: Int?) {
-        this.icon = icon
-        this.code = code
-    }
-
     constructor(icon: Int?, code: Int?, isSelected: Boolean?) {
         this.icon = icon
         this.code = code

@@ -15,18 +15,12 @@ import com.example.meucv.sidemenu.MenuUtil
 import com.example.meucv.team.TeamFragment
 
 
-
-
-
-
-
 class MainActivity : AppCompatActivity() , CallBack{
 
     lateinit var menuRv : RecyclerView
     lateinit var menuItems: List<MenuItem>
     lateinit var adapter: MenuAdapter
     var  selectedMenuPos : Int = 0
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,15 +32,10 @@ class MainActivity : AppCompatActivity() , CallBack{
 
         setHomeFragment()
 
-       // setPortifolioFragment()
-      //setCVFragment()
-     // setTeamFragment()
-
     }
 
     fun setupSideMenu() {
         menuRv = findViewById(R.id.rv_side_menu)
-       // val menuItems : List<MenuItem>
         menuItems = MenuUtil.MenuList().getList().toList()
          adapter   = MenuAdapter(menuItems,this)
         menuRv.setLayoutManager( LinearLayoutManager(this))

@@ -14,7 +14,6 @@ class MenuUtil() {
             const val CV_FRAGMENT_CODE = 1
             const val PORTIFOLIO_FRAGMENT_CODE = 2
             const val TEAM_FRAGMENT_CODE = 3
-
         }
     }
     class  MenuList() {
@@ -27,8 +26,6 @@ class MenuUtil() {
 
             return list
         }
-
     }
-
 }
 
